@@ -1,0 +1,85 @@
+.editor{
+    display: flex;
+    gap: 20px;
+    height: 700px;
+    position: relative;
+}
+.category{
+    padding: 5px;
+    margin: 10px 15px;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    border: none;
+    font-size: 18px;
+    color: #b3b3b1;;
+    background-color: var(--bg);
+    border-bottom: 1px solid #b3b3b1;
+}
+.button,.addButton{
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background-color: transparent;
+    border: 1px solid var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.addButton{
+    border-color: #1a8917;
+}
+.add{
+    display: flex;
+    gap: 20px;
+    background-color: var(--bg);
+    position: absolute;
+    width: 100%;
+    left: 50px;
+
+}
+.input{
+    padding: 40px;
+    font-size: 48px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--textColor);
+}
+.input::placeholder{
+    color: #b3b3b1;
+}
+.textArea{
+    width: 100%;
+    margin-top: 30px;
+}
+.publish{
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #1a8917;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
+}
+@media screen and (max-width:1295px) {
+    .publish{
+        top:65px;
+        right: 50px
+    }
+}
+@media screen and (max-width:1280px) {
+    .publish{
+        top:30px;
+        right: 20px
+    }
+}
+@media screen and (max-width:1024px) {
+    .publish{
+        top:65px;
+        right: 50px
+    }
+}

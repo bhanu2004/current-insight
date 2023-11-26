@@ -1,0 +1,138 @@
+.container{
+    width: 100%;
+    /* display: flex;
+    align-items: center; */
+    /* justify-content: center; */
+    /* margin-top: 60px; */
+}
+.leftPanel{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    /* padding: 100px; */
+    gap: 15px;
+}
+.heading{
+    text-align: center;
+    font-size: 46px;
+    font-weight: 300;
+    margin-top: 30px;
+}
+.messageContainer{
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin: 50px 40px 0 40px;
+}
+.info{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+.input{
+    /* width: 100%;
+    margin: 10px; */
+    padding: 10px;
+    background-color: var(--bg);
+    outline: none;
+    border: 2px solid var(--textColor);
+    color: var(--textColor);
+    font-size: 20px;
+    
+}
+.inputMessage{
+    padding: 10px;
+    background-color: var(--bg);
+    outline: none;
+    border: 2px solid var(--textColor);
+    color: var(--textColor);
+    font-size: 20px;
+    
+}
+.submitBtn{
+    text-align: center;
+    font-size: 18px;
+    padding: 8px;
+    background-color: var(--textColor);
+    color: var(--bg);
+    border: 0;
+    cursor: pointer;
+}
+.socialLinks{
+    display: flex;
+    gap: 10px;
+    border-top: 2px solid var(--softTextColor);
+    border-bottom: 2px solid var(--softTextColor);
+    padding: 30px 0;
+    margin: 70px 0 35px 0;
+}
+.socialLinks div{
+    /* padding: 30px; */
+    background-color: var(--softBg);
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+@media screen and (max-width:1024px) {
+    
+    .leftPanel{
+        gap: 10px;
+        flex-basis: 80%;
+    }
+    .heading{
+        text-align: center;
+        font-size: 38px;
+        font-weight: 300;
+        margin-top: 30px;
+    }
+    .messageContainer{
+        gap: 60px;
+        margin: 50px 40px 0 40px;
+    }
+    .info{
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .input{
+        padding: 10px;
+        font-size: 18px;
+        
+    }
+    .inputMessage{
+        padding: 10px;
+        font-size: 18px;
+        height: 200px;
+        
+    }
+    .socialLinks{
+        padding: 25px 0;
+        margin: 60px 0 25px 0;
+    }
+    .socialLinks div{
+        width: 50px;
+        height: 50px;
+    }
+}
+@media screen and (max-width:770px) {
+    .messageContainer{
+        flex-direction: column;
+        gap: 60px;
+        margin: 50px 20px 0 20px;
+    }
+    .leftPanel{
+        width: 100%;
+    }
+    .login{
+        width: 100%;
+    }
+}
